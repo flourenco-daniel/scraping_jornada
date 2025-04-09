@@ -14,6 +14,8 @@ class NotebookSpider(scrapy.Spider):
             
             yield{
                 'brand':product.css('span.poly-component__brand::text').get()
+                'description':product.css('a.poly-component__title::text').get()
+
             }
 
         pass
