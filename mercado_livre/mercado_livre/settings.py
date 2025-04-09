@@ -7,6 +7,9 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+import os
+from dotenv import load_dotenv
+
 BOT_NAME = "mercado_livre"
 
 SPIDER_MODULES = ["mercado_livre.spiders"]
@@ -14,7 +17,7 @@ NEWSPIDER_MODULE = "mercado_livre.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "mercado_livre (+http://www.yourdomain.com)"
+USER_AGENT = os.getenv("USER_AGENT")
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
