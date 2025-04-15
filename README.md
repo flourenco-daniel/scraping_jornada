@@ -94,4 +94,3 @@ The project is still a work in progress.
 I plan to expand the data extraction to more fields beyond just brand.
 
 Future improvements may include pagination, category filtering, and more robust error handling.
-
