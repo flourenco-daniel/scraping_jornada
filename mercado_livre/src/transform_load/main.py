@@ -35,7 +35,7 @@ print(df)
 
 #salvando no banco
 
-conn = sqlite3.connect('mercado_livre/data/notebook.sql')
+conn = sqlite3.connect('mercado_livre/data/notebook.db')
 
 df.to_sql('notebook_research', conn, if_exists='replace', index=False)
 
